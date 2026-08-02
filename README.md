@@ -38,12 +38,4 @@ Ensuring resource sustainability—specifically across the **Food-Energy-Water (
 
 ---
 
-## 📁 Repository Structure
 
-```text
-├── assets/
-│   └── dashboard_preview.jpg         # Dashboard screenshot / visual preview
-├── data/
-│   └── raw_data.csv                  # Underlying dataset (if applicable)
-├── Food_Energy_Water_Dashboard.pbix  # Primary Power BI Desktop File
-└── README.md                         # Project documentation

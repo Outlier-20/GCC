@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food, Energy, and Water (FEW) Nexus Dashboard</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-color: #c9d1d9;
+            --heading-color: #58a6ff;
+            --accent-color: #238636;
+            --border-color: #30363d;
+            --code-bg: #21262d;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2em;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: var(--heading-color);
+            font-size: 1.4em;
+            margin-top: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            color: #ffffff;
+            font-size: 1.1em;
+            margin-top: 20px;
+        }
+
+        p, li {
+            font-size: 15px;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        code {
+            background-color: var(--code-bg);
+            color: #f0f6fc;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background-color: var(--code-bg);
+            padding: 16px;
+            border-radius: 6px;
+            overflow-x: auto;
+            border: 1px solid var(--border-color);
+        }
+
+        pre code {
+            background-color: transparent;
+            padding: 0;
+            color: #e6edf3;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--border-color);
+            margin: 30px 0;
+        }
+
+        a {
+            color: var(--heading-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Food, Energy, and Water (FEW) Nexus Dashboard</h1>
+
+    <p>A comprehensive Data Analytics and Visualization project built in <strong>Power BI</strong> to monitor and analyze critical indicators including <strong>Food Security, Agricultural/Fisheries Production, Water Stress, Desalinated Water, Energy Share, and Economic Price Indices (CPI)</strong> across GCC countries and global regions.</p>
+
+    <hr>
+
+    <h2>📌 Project Overview</h2>
+    <p>Ensuring resource sustainability—specifically across the <strong>Food-Energy-Water (FEW) Nexus</strong>—is a vital challenge for developing and high-growth economies. This interactive dashboard provides a data-driven platform for policy analysts, researchers, and decision-makers to track key environmental and economic metrics.</p>
+
+    <h3>Key Metrics & Data Model Indicators:</h3>
+    <ul>
+        <li><strong>Food Security & Price Dynamics:</strong> Food Consumer Price Index (CPI), Food Insecurity Index, and Fisheries Production (in Kilotons).</li>
+        <li><strong>Water Resource Management:</strong> Water Stress Percentage (<code>Water_Stress_Pct</code>), Water Efficiency (<code>Water_Efficiency_USD_m3</code>), and Desalinated Water Production (<code>Desalinated_Water_MioM3</code>).</li>
+        <li><strong>Energy & Macro Economics:</strong> Renewable Energy Share (<code>Renewable_Energy_Share</code>), Dairy Production (<code>Dairy_Prod_ML</code>), and Total Resource Imports (<code>Total_Imports_USD_M</code>).</li>
+    </ul>
+
+    <hr>
+
+    <h2>🎨 Key Features & Visualizations</h2>
+    <ul>
+        <li><strong>Dynamic Interactive Slicers:</strong> Country-level filtering (Saudi Arabia, UAE, Kuwait, Qatar, Bahrain, etc.) and Time Series selections.</li>
+        <li><strong>Data Model & Schema:</strong> Multi-table relational model with custom DAX measures, theme definitions, and clean layout structures.</li>
+        <li><strong>KPI Visuals & Summary Gauges:</strong> Real-time summary cards tracking fish production volumes, desalinated water production, and food price tracking.</li>
+        <li><strong>Interactive Visuals:</strong>
+            <ul>
+                <li>Doughnut Charts for resource allocation and distribution.</li>
+                <li>Multi-axis Line Charts highlighting historical trends in water stress vs. desalinated water volume.</li>
+                <li>Granular Country Comparison Tables for detailed analytical inspection.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h2>🛠️ Tech Stack & Tools</h2>
+    <ul>
+        <li><strong>Power BI Desktop:</strong> Report layout, DAX calculations, schema modeling, and theme formatting.</li>
+        <li><strong>Power BI Service:</strong> Interactive web publishing and cloud data refresh management.</li>
+        <li><strong>Power Query (M):</strong> Data extraction, transformation, cleaning, and missing-value (<code>Blank</code>) handling.</li>
+        <li><strong>DAX (Data Analysis Expressions):</strong> Custom aggregation measures, dynamic KPIs, and fallback handling.</li>
+    </ul>
+
+    <hr>
+
+    <h2>📁 Repository Structure</h2>
+<pre><code>├── assets/
+│   └── dashboard_preview.jpg         # Dashboard screenshot / visual preview
+├── data/
+│   └── raw_data.csv                  # Underlying dataset (if applicable)
+├── Food_Energy_Water_Dashboard.pbix  # Primary Power BI Desktop File
+└── README.html                       # Project documentation (HTML)
+</code></pre>
+
+    <hr>
+
+    <h2>🚀 Getting Started & How to Run</h2>
+    <ol>
+        <li>
+            <strong>Clone or Download the Repository:</strong>
+<pre><code>git clone https://github.com/YOUR_USERNAME/food-energy-water-dashboard.git</code></pre>
+        </li>
+        <li>
+            <strong>Open in Power BI Desktop:</strong>
+            <ul>
+                <li>Install the latest version of <a href="https://powerbi.microsoft.com/" target="_blank">Power BI Desktop</a>.</li>
+                <li>Open <code>Food_Energy_Water_Dashboard.pbix</code>.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Explore the Interactive Report:</strong>
+            <ul>
+                <li>Use the country and date slicers to filter through the FEW nexus analytics.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <hr>
+
+    <h2>📝 License</h2>
+    <p>This project is licensed under the <strong>MIT License</strong> - free to use, modify, and distribute for learning and portfolio purposes.</p>
+
+</div>
+
+</body>
+</html>
